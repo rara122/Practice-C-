@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace CSharpPractice
 {
-    public class Bike
+    internal class Bike
     {
         public int BikeId { get; set; }
         public string BikeName { get; set; }
         public Nullable<DateTime> ReleaseDate { get; set; }
+        public int ManufacturerId { get; set; }
+        public Manufacturer Manufacturer { get; set; }
     }
 }

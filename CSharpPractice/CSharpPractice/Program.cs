@@ -12,13 +12,18 @@ namespace CSharpPractice
         {
             using (var context = new BikeContext())
             {
-                List<Bike> bikes = new List<Bike>();
-                bikes.Add(new Bike { BikeName = "Ninja" });
-                bikes.Add(new Bike { BikeName = "Scramber" });
+                var m1 = new Manufacturer { ManufacturerName = "Kawasaki" };
+                var m2 = new Manufacturer { ManufacturerName = "Ducati" };
+                var m3 = new Manufacturer { ManufacturerName = "Yamaha" };
+                context.Manufacturers.Add(m1);
+                context.Manufacturers.Add(m2);
+                context.Bikes.Add(new Bike { BikeName = "Ninja",  Manufacturer = m1});
+                context.Bikes.Add(new Bike { BikeName = "Scramber", Manufacturer = m2 });
+                context.Bikes.Add(new Bike { BikeName = "Fizzer", Manufacturer = m3 });
 
-                context.Bikes.AddRange(bikes);
                 context.SaveChanges();
 
+                var results = context.Bikes.Where(b => b.Manufacturer.ManufacturerName == "Yamaha").ToList();
             }
         }
     }

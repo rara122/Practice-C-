@@ -1,5 +1,6 @@
 namespace CSharpPractice
 {
+    using CSharpPractice.Models;
     using System;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity;
@@ -25,6 +26,7 @@ namespace CSharpPractice
 
         public virtual DbSet<Bike> Bikes { get; set; }
         public virtual DbSet<Manufacturer> Manufacturers { get; set; }
+        public virtual DbSet<Wheel> Wheels { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -32,9 +34,24 @@ namespace CSharpPractice
 
             modelBuilder.Entity<Bike>()
                 .Property(x => x.BikeName)
+                .IsRequired()
                 .HasMaxLength(20)
                 .HasColumnAnnotation(IndexAnnotation.AnnotationName, new IndexAnnotation(
                     new IndexAttribute("IX_BikeName", 1) { IsUnique = true })
+                    );
+            modelBuilder.Entity<Manufacturer>()
+                .Property(x => x.ManufacturerName)
+                .IsRequired()
+                .HasMaxLength(20)
+                .HasColumnAnnotation(IndexAnnotation.AnnotationName, new IndexAnnotation(
+                    new IndexAttribute("IX_ManufacturerName", 1) { IsUnique = true })
+                    );
+            modelBuilder.Entity<Wheel>()
+                .Property(x => x.WheelName)
+                .IsRequired()
+                .HasMaxLength(20)
+                .HasColumnAnnotation(IndexAnnotation.AnnotationName, new IndexAnnotation(
+                    new IndexAttribute("IX_WheelName", 1) { IsUnique = true })
                     );
         }
     }

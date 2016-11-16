@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSharpPractice
 {
-    internal class Bike
+    class Bike
     {
         public int BikeId { get; set; }
         public string BikeName { get; set; }

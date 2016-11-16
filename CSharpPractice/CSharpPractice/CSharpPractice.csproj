@@ -52,9 +52,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bike.cs" />
-    <Compile Include="BikeContext.cs" />
-    <Compile Include="Manufacturer.cs" />
+    <Compile Include="Models\Bike.cs" />
+    <Compile Include="Models\BikeContext.cs" />
+    <Compile Include="Models\Manufacturer.cs" />
+    <Compile Include="Models\Wheel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

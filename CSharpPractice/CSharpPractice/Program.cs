@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSharpPractice.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,6 +21,8 @@ namespace CSharpPractice
                 context.Bikes.Add(new Bike { BikeName = "Ninja",  Manufacturer = m1});
                 context.Bikes.Add(new Bike { BikeName = "Scramber", Manufacturer = m2 });
                 context.Bikes.Add(new Bike { BikeName = "Fizzer", Manufacturer = m3 });
+                context.Wheels.Add(new Wheel { WheelName = "All Terrain", Price = (decimal)8.5683 });
+                context.Wheels.Add(new Wheel { WheelName = "Track", Price = (decimal)12.22 });
 
                 context.SaveChanges();
 

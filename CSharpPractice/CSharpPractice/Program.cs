@@ -10,6 +10,16 @@ namespace CSharpPractice
     {
         static void Main(string[] args)
         {
+            using (var context = new BikeContext())
+            {
+                List<Bike> bikes = new List<Bike>();
+                bikes.Add(new Bike { BikeName = "Ninja" });
+                bikes.Add(new Bike { BikeName = "Scramber" });
+
+                context.Bikes.AddRange(bikes);
+                context.SaveChanges();
+
+            }
         }
     }
 }

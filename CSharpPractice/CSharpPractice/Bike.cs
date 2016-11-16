@@ -10,6 +10,6 @@ namespace CSharpPractice
     {
         public int BikeId { get; set; }
         public string BikeName { get; set; }
-        public DateTime ReleaseDate { get; set; }
+        public Nullable<DateTime> ReleaseDate { get; set; }
     }
 }

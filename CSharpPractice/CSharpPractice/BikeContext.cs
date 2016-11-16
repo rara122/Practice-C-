@@ -15,6 +15,7 @@ namespace CSharpPractice
         public BikeContext()
             : base("name=BikeContext")
         {
+            Database.SetInitializer<BikeContext>(new DropCreateDatabaseIfModelChanges<BikeContext>());
         }
 
         // Add a DbSet for each entity type that you want to include in your model. For more information 

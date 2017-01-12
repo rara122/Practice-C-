@@ -5,6 +5,10 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeDbTesting", "CSharpPractice\BikeDbTesting.csproj", "{C0953760-C66F-4B4B-8D56-698F3A010ED7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeMvc", "BikeMvc\BikeMvc.csproj", "{8404D063-D4C3-4C12-B087-50E6569FD063}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeMvc.Tests", "BikeMvc.Tests\BikeMvc.Tests.csproj", "{7464C1B2-471C-4982-BBC8-13D8D49AACAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{C0953760-C66F-4B4B-8D56-698F3A010ED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0953760-C66F-4B4B-8D56-698F3A010ED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0953760-C66F-4B4B-8D56-698F3A010ED7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8404D063-D4C3-4C12-B087-50E6569FD063}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8404D063-D4C3-4C12-B087-50E6569FD063}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8404D063-D4C3-4C12-B087-50E6569FD063}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8404D063-D4C3-4C12-B087-50E6569FD063}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7464C1B2-471C-4982-BBC8-13D8D49AACAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7464C1B2-471C-4982-BBC8-13D8D49AACAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7464C1B2-471C-4982-BBC8-13D8D49AACAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7464C1B2-471C-4982-BBC8-13D8D49AACAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
